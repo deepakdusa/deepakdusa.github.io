@@ -5,15 +5,13 @@ import { toast } from 'sonner';
 
 const ResumeButton = () => {
   const handleDownload = () => {
-    // Create a link to download the resume
     const link = document.createElement('a');
-    link.href = '/resume-deepak.pdf'; // This should be the path to your resume PDF
+    link.href = '/resume-deepak.pdf'; 
     link.download = 'Deepak_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     
-    // Show success toast
     toast.success('Resume download started!');
   };
 

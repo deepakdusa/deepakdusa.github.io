@@ -17,7 +17,6 @@ const Navbar = () => {
     { name: 'Contact', path: '/#contact' },
   ];
 
-  // Handle scroll event to change navbar style
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
@@ -31,27 +30,21 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu when clicking a link
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   };
 
-  // Handle smooth scrolling for anchor links
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
-    // Only handle smooth scroll for hash links on the same page
     if (path.includes('#') && location.pathname === '/') {
       e.preventDefault();
       const targetId = path.replace('/#', '');
       const targetElement = document.getElementById(targetId);
       
       if (targetElement) {
-        // Scroll to the element
         targetElement.scrollIntoView({ behavior: 'smooth' });
         
-        // Update the URL without page reload
         window.history.pushState(null, '', path);
         
-        // Close menu
         setIsMenuOpen(false);
       }
     } else {

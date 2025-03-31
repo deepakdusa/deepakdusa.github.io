@@ -7,6 +7,7 @@ interface EducationItem {
   degree: string;
   duration: string;
   location: string;
+  link : string;
 }
 
 const Education = () => {
@@ -15,19 +16,23 @@ const Education = () => {
       institution: "Malla Reddy University",
       degree: "B. Tech",
       duration: "2023-2027",
-      location: "Hyderabad"
+      location: "Hyderabad",
+      link: "https://www.mallareddyuniversity.ac.in/"
     },
     {
       institution: "NRI Jr College",
       degree: "IPE(Intermediate)",
       duration: "2021-2023",
-      location: "Hyderabad"
+      location: "Hyderabad",
+      link: "https://srinri.in/"
     },
     {
       institution: "Vashista Model High School",
       degree: "SSC-Board",
       duration: "2020-2021",
-      location: "Hyderabad"
+      location: "Hyderabad",
+      link: "http://vashistamhs.org/"
+
     }
   ];
 

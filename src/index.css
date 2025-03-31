@@ -59,34 +59,28 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Make text selection light green */
   ::selection {
     @apply bg-green-300/40 text-foreground;
   }
 }
 
 @layer components {
-  /* Glass effect for cards */
   .glass-card {
     @apply backdrop-blur-sm bg-white/80 border border-white/20 shadow-sm;
   }
   
-  /* For skill bars */
   .skill-bar {
     @apply h-2 rounded-full bg-gradient-to-r from-green-400 to-green-600 transition-all duration-1000;
   }
   
-  /* Progress bar container */
   .skill-bar-container {
     @apply w-full h-2 bg-gray-100 rounded-full overflow-hidden;
   }
   
-  /* Section divider */
   .section-divider {
     @apply w-20 h-1 bg-gradient-to-r from-green-400 to-green-600 rounded-full my-6 mx-auto;
   }
   
-  /* Button animations */
   .btn-animated {
     @apply relative overflow-hidden transition-all duration-300 
     before:absolute before:inset-0 before:w-full before:h-full before:bg-white/10 
@@ -94,28 +88,23 @@
     hover:before:translate-x-0 hover:shadow-md;
   }
   
-  /* Project card hover effect */
   .project-card {
     @apply relative overflow-hidden transition-all duration-500 
     hover:shadow-xl hover:-translate-y-1;
   }
   
-  /* Contact icon animation */
   .contact-icon {
     @apply transition-all duration-300 hover:scale-110 hover:-translate-y-1;
   }
   
-  /* Green gradient text */
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400;
   }
   
-  /* Green gradient background */
   .gradient-bg {
     @apply bg-gradient-to-r from-green-600 to-green-400;
   }
   
-  /* Timeline styles */
   .timeline-container {
     @apply relative;
   }
@@ -133,7 +122,6 @@
   }
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -150,12 +138,10 @@
   @apply bg-green-300;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Hero section background */
 .hero-gradient {
   background: radial-gradient(circle at center, rgba(220, 252, 231, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
 }
