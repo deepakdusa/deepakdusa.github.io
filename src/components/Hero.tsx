@@ -80,7 +80,7 @@ const Hero = () => {
             <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
               <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 to-green-300/30 rounded-full animate-pulse-subtle"></div>
               <img 
-                src="\public\lovable-uploads\IMG_20250327_224740.jpg" 
+                src="\public\images\1682498048996.jpg" 
                 alt="Deepak Kumar" 
                 className="absolute inset-0 w-full h-full object-cover rounded-full border-4 border-white shadow-xl"
               />
