@@ -1,6 +1,6 @@
 {
   "homepage": "https://deepakdusa.github.io",
-  "predeploy": "npm run build",
+  "predeploy": "npm run dev",
   "deploy": "gh-pages -d build",
   "name": "vite_react_shadcn_ts",
   "private": true,
